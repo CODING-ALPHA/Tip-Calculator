@@ -33,7 +33,7 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 ### Links
 
 - Solution URL: (https://github.com/CODING-ALPHA/Tip-Calculator)
-- Live Site URL: (https://your-live-site-url.com)
+- Live Site URL: (https://tip-calculator-beta-inky.vercel.app/)
 
 ## My process
 
