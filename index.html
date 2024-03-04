@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- stylesheet link -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <img src="./images/logo.svg" alt="" />
+    <main>
+      <section class="first-half">
+        <div class="div_input bill-amount-div">
+          <div class="input_state">
+            <h5>Bill</h5>
+            <div class="state1">can't be zero</div>
+          </div>
+
+          <div class="input--container" id="input--container1">
+            <p>$</p>
+            <input type="number" id="bill-input" />
+          </div>
+        </div>
+
+        <!------------------SELECT TIP BUTTONS---------------------->
+        <div class="select-tip-div">
+          <h5>Select Tip %</h5>
+          <div class="select-tip-buttons">
+            <button class="tip-btns">
+              <span class="tip-percentage">5</span>%
+            </button>
+            <button class="tip-btns">
+              <span class="tip-percentage">10</span>%
+            </button>
+            <button class="tip-btns">
+              <span class="tip-percentage">15</span>%
+            </button>
+            <button class="tip-btns">
+              <span class="tip-percentage">25</span>%
+            </button>
+            <button class="tip-btns">
+              <span class="tip-percentage">50</span>%
+            </button>
+            <input type="text" placeholder="Custom" id="Custom-input" />
+          </div>
+        </div>
+
+        <div class="div_input number-people-div">
+          <div class="input_state">
+            <h5>Number of People</h5>
+            <div class="state2">can't be zero</div>
+          </div>
+
+          <div class="input--container" id="input--container2">
+            <p class="fa-solid fa-user"></p>
+            <input type="number" id="people-input" />
+          </div>
+        </div>
+      </section>
+
+      <!-- -----------------DISPLAY PART OR SECOND PART---------------------- -->
+
+      <section class="second-half">
+        <div class="display-outer-div">
+          <div class="displays">
+            <h5>
+              Tip Amount <br />
+              <span>/ person</span>
+            </h5>
+            <div>
+              <!-- <span>$</span> -->
+              <h2>$<span class="tip--amount">0.00</span></h2>
+            </div>
+          </div>
+          <div class="displays">
+            <h5>
+              Total <br />
+              <span>/ person</span>
+            </h5>
+            <div>
+              <!-- <span>$</span> -->
+              <h2>$<span class="tip--total">0.00</span></h2>
+            </div>
+          </div>
+        </div>
+        <button class="displays-btn">Reset</button>
+      </section>
+    </main>
+
+    <!-- -----------------MY FOOTER------------------ -->
+
+    <footer>&copy;2024 crafted by Ayomide A.</footer>
+
+    <!-- -------------------LINKING FONT AWESOME ICON LIBRARY--------------------- -->
+    <script
+      src="https://kit.fontawesome.com/cabeaa4f3d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- --------------LINKING JS FILE----------------- -->
+    <script src="script.js"></script>
+  </body>
+</html>

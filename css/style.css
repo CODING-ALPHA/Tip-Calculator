@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Primary */
+  --Strong-cyan: hsl(172, 67%, 45%);
+
+  /*Neutral*/
+  --active: hsl(172, 84%, 81%);
+  --red: rgba(213, 8, 8, 0.706);
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Grayish-cyan: hsl(184, 14%, 56%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%);
+  --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+
+  /* Font Family */
+  --font-family: "Space Mono", monospace;
+  --font-weight: 700;
+}
+
+body {
+  background-color: var(--Light-grayish-cyan);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+}
+
+main {
+  background-color: var(--White);
+  display: flex;
+  gap: 3rem;
+  padding: 2rem;
+  box-shadow: 3px 5px 8px 8px rgba(0, 0, 0, 0.086);
+  border-radius: 18px;
+}
+
+img {
+  margin-top: 3.5rem;
+}
+.first-half,
+.second-half {
+  flex-basis: 50%;
+}
+
+.first-half h5 {
+  color: var(--Dark-grayish-cyan);
+}
+
+.second-half {
+  background-color: var(--Very-dark-cyan);
+  color: var(--White);
+  gap: 4.5rem;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 13px;
+}
+
+.number-people-div {
+  margin-top: 2rem;
+}
+
+.input--container,
+.div_input input {
+  background-color: var(--Very-light-grayish-cyan);
+  color: var(--Grayish-cyan);
+}
+
+.input--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  border: 2px solid transparent;
+}
+
+.input--container:hover {
+  border-color: var(--active);
+}
+
+.div_input input {
+  outline: none;
+  border: none;
+  height: 30px;
+  width: 100%;
+  text-align: end;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.select-tip-div {
+  margin-top: 2rem;
+}
+
+.select-tip-div .select-tip-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 0.8rem;
+  width: max-content;
+}
+
+.select-tip-div .select-tip-buttons button,
+.select-tip-div .select-tip-buttons input {
+  width: 6.5rem;
+  height: 2.6rem;
+  color: var(--White);
+  background-color: var(--Very-dark-cyan);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+}
+
+.select-tip-div .select-tip-buttons button:active {
+  background-color: var(--active);
+  color: var(--Very-dark-cyan);
+}
+
+.select-tip-div .select-tip-buttons input {
+  text-align: end;
+  padding: 1rem;
+  background-color: var(--Very-light-grayish-cyan);
+  color: var(--Grayish-cyan);
+}
+.select-tip-div .select-tip-buttons input:focus {
+  border: 2px solid var(--active);
+}
+
+.input_state {
+  display: flex;
+  justify-content: space-between;
+}
+
+.second-half .display-outer-div .displays {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.second-half .display-outer-div .displays:nth-child(2) {
+  margin-top: 2rem;
+}
+
+.second-half .display-outer-div .displays h5 {
+  width: 140px;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-half .display-outer-div .displays h5 span {
+  color: var(--Dark-grayish-cyan);
+}
+
+.second-half .display-outer-div .displays div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  font-size: 1.6rem;
+}
+
+.second-half .display-outer-div .displays div h2 {
+  width: 170px;
+  color: var(--Strong-cyan);
+  text-align: end;
+  overflow-y: scroll;
+}
+
+.second-half .display-outer-div .displays div h2::-webkit-scrollbar {
+  display: none;
+}
+
+.displays-btn {
+  background-color: hsla(182, 32%, 54%, 0.258);
+  color: hsla(183, 100%, 15%, 0.559);
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: none;
+  padding: 0.7rem 1rem;
+  outline: none;
+  border-radius: 4px;
+}
+
+.displays-btn:active {
+  background-color: var(--active);
+}
+
+/* --------FOOTER----------------- */
+footer {
+  width: 100%;
+  background-color: var(--Very-dark-cyan);
+  color: #fff;
+  padding: 0.3rem 0;
+  font-family: inherit;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* ---------------------------------------------------- */
+/* JS DOM MANIPULATION CLASSES */
+
+.input-color-active {
+  color: var(--Very-dark-cyan) !important;
+}
+
+.border-active {
+  border: 2px solid red;
+}
+
+.state1,
+.state2 {
+  color: transparent;
+}
+.displays-btn-state {
+  background-color: var(--Strong-cyan);
+  color: var(--Very-dark-cyan);
+}
+
+/* MEDIA QUERIES FOR RESPONSIVENESS ON MOBILE SCREENS */
+
+@media only screen and (max-width: 873px) {
+  main {
+    flex-direction: column;
+    gap: 2rem 0;
+  }
+
+  .select-tip-div .select-tip-buttons {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  main {
+    width: 100%;
+    padding: 1rem;
+  }
+  .select-tip-div .select-tip-buttons {
+    width: 100%;
+  }
+
+  .select-tip-div .select-tip-buttons button,
+  .select-tip-div .select-tip-buttons input {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .select-tip-div .select-tip-buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .second-half {
+    gap: 2rem;
+    padding: 2rem 1rem 1.5rem 1rem;
+  }
+
+  .second-half .display-outer-div .displays div h2 {
+    width: 150px;
+  }
+}
