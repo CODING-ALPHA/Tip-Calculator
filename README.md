@@ -28,7 +28,7 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 
 ### Screenshot
 
-![Screenshot image](./images/Screenshot%202024-03-04%20173249.png)
+![Screenshot image](<./images/Screenshot%202024-03-04%20173249.png>)
 
 ### Links
 
